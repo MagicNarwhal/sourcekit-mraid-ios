@@ -46,7 +46,6 @@
 		3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDDD19815D9100A968BF /* SKMRAIDInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE619815D9100A968BF /* SKMRAIDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE319815D9100A968BF /* SKMRAIDServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B1E12CA1DDA76FE00A57DC6 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
 		3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDD719815D9100A968BF /* MRAIDSettings.m */; };
 		3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDA19815D9100A968BF /* SKMRAIDOrientationProperties.m */; };
@@ -154,7 +153,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B1E12CA1DDA76FE00A57DC6 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,10 +628,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "SourceKit-MRAID/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -664,10 +659,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/Carthage/Build/iOS/";
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				INFOPLIST_FILE = "SourceKit-MRAID/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
