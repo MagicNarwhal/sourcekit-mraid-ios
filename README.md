@@ -1,6 +1,8 @@
 Nexage Integration SourceKit for MRAID
 ======================================
 
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 Nexage Integration SourceKit for MRAID is an easy to use library which implements the IAB MRAID 2.0 spec (http://www.iab.net/guidelines/508676/mobile_guidance/mraid). It is 
 written in Objective-C and works in both iPhone and iPad applications.
 
@@ -14,31 +16,25 @@ written in Objective-C and works in both iPhone and iPad applications.
 
 **Requirements:**
 
-- iOS 4.3+
-- Xcode: 5.0+
-- SourceKitCommon Github project (https://github.com/nexage/sourcekit-common-ios)
-
+- iOS 8+
+- Xcode: 8.1+
+- SourceKitCommon Github project (https://github.com/nexage/sourcekit-common-ios) or Carthage build (https://github.com/HiddenJester/sourcekit-common-ios)
 
 Getting Started
 ===============
 
-Step 1: Include MRAID & "SourceKitCommon" Xcode projects. Please make sure that you clone
-SourceKitCommon Github repository in the same folder level as MRAID.
+Step 1: Set up your Cartfile to import sourcekit-mraid-ios & source-kit-common-ios like this:
 
-Step 2: Import these header file(s) into your project:
-
-	#import "SKLogger.h"
-	#import "SKMRAIDView.h"
-	#import "SKMRAIDInterstitial.h"
-	#import "SKMRAIDServiceDelegate.h"
+	github "HiddenJester/sourcekit-mraid-ios" >= 1.0.7
+	github "HiddenJester/sourcekit-common-ios" >= 1.0.4
 	
-Edit Build Phases under target<br/>
+Step 2: Configure carthage as per the instructions here: https://github.com/Carthage/Carthage
 
-	Target Dependencies - Add MRAID & SourceKitCommon projects
-	Link Binary with Libraries - Add libMRAID.a & libSourceKitCommon.a
+Step 3: Import sourcekit-mraid-ios into your project:
 
-
-Step 3: Create an SKMRAIDView and add it to your container view, as in this example:
+	@import sourcekitMRAID;
+	
+Step 4: Create an SKMRAIDView and add it to your container view, as in this example:
 
 For a Banner:
 
@@ -72,11 +68,13 @@ Wait for the SKMRAIDInterstitialDelegate 'mraidInterstitialAdReady:' callback an
     
 Inspect ad availabilith with [mraidInterstitial isAdReady] before you play the ad.
 
-Step 4: (Optional) To see logging:
+Step 5: (Optional) To see logging:
 	
+	@import SourceKitCommon.SKLogger;
+
 	[SKLogger setLogLevel:SourceKitLogLevelDebug];   // select desired log level
 
-Step 5: (Optional) Implement the SKMRAIDServiceDelegate Protocol if you wish to listen for and take action on MRAID calendar, storePicture, inlineVideo, and open browser events.
+Step 6: (Optional) Implement the SKMRAIDServiceDelegate Protocol if you wish to listen for and take action on MRAID calendar, storePicture, inlineVideo, and open browser events.
 
 That's it! 
 
