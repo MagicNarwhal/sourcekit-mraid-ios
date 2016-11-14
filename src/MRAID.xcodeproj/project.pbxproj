@@ -56,7 +56,6 @@
 		3BBDF2E11DDA5908006EDFA3 /* SKMRAIDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE519815D9100A968BF /* SKMRAIDUtil.m */; };
 		3BBDF2E21DDA5908006EDFA3 /* SKMRAIDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE719815D9100A968BF /* SKMRAIDView.m */; };
 		3BBDF2E51DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
-		3BBDF2E61DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,7 +155,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3BBDF2E61DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +317,6 @@
 				3BBDF2CD1DDA5822006EDFA3 /* Frameworks */,
 				3BBDF2CE1DDA5822006EDFA3 /* Headers */,
 				3BBDF2CF1DDA5822006EDFA3 /* Resources */,
-				3B1E12C91DDA710A00A57DC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -380,20 +377,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3B1E12C91DDA710A00A57DC6 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/SourceKitCommon.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		E245B1BE17F35A830056CCB5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
