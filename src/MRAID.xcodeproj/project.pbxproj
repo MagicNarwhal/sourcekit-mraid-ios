@@ -319,6 +319,7 @@
 				3BBDF2CD1DDA5822006EDFA3 /* Frameworks */,
 				3BBDF2CE1DDA5822006EDFA3 /* Headers */,
 				3BBDF2CF1DDA5822006EDFA3 /* Resources */,
+				3B1E12C91DDA710A00A57DC6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -379,6 +380,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3B1E12C91DDA710A00A57DC6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SourceKitCommon.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		E245B1BE17F35A830056CCB5 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
