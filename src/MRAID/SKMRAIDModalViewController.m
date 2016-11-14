@@ -8,8 +8,9 @@
 
 #import "SKMRAIDModalViewController.h"
 
+@import SourceKitCommon.SKLogger;
+
 #import "SKMRAIDUtil.h"
-#import "SKLogger.h"
 #import "SKMRAIDOrientationProperties.h"
 
 @interface SKMRAIDModalViewController ()

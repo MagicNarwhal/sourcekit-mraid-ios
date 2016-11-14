@@ -15,7 +15,7 @@
 #import "SKMRAIDUtil.h"
 #import "MRAIDSettings.h"
 
-#import "SKLogger.h"
+@import SourceKitCommon.SKLogger;
 
 #import "mraidjs.h"
 #import "CloseButton.h"

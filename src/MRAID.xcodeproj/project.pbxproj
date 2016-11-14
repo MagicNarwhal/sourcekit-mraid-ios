@@ -38,12 +38,22 @@
 		2738BDF819815D9100A968BF /* SKMRAIDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE519815D9100A968BF /* SKMRAIDUtil.m */; };
 		2738BDF919815D9100A968BF /* SKMRAIDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE719815D9100A968BF /* SKMRAIDView.m */; };
 		2738BDFA19815D9100A968BF /* SKMRAIDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE719815D9100A968BF /* SKMRAIDView.m */; };
-		27B9578D18343A400076286F /* libSourceKitCommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27B9578C18343A400076286F /* libSourceKitCommon.a */; };
 		27BBC1651833E99900074066 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27296B9217F280CE004C268F /* Foundation.framework */; };
 		27BBC1661833E99900074066 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EBFE7417F2837900FCB7DD /* UIKit.framework */; };
 		27BBC16E1833E99900074066 /* MRAID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BBC16D1833E99900074066 /* MRAID_Tests.m */; };
 		27BBC17B1833EA0500074066 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBC17A1833EA0500074066 /* XCTest.framework */; };
 		27EBFE7517F2837900FCB7DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EBFE7417F2837900FCB7DD /* UIKit.framework */; };
+		3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDD719815D9100A968BF /* MRAIDSettings.m */; };
+		3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDA19815D9100A968BF /* SKMRAIDOrientationProperties.m */; };
+		3BBDF2DD1DDA5908006EDFA3 /* SKMRAIDResizeProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDC19815D9100A968BF /* SKMRAIDResizeProperties.m */; };
+		3BBDF2DE1DDA5908006EDFA3 /* SKMRAIDInterstitial.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDE19815D9100A968BF /* SKMRAIDInterstitial.m */; };
+		3BBDF2DF1DDA5908006EDFA3 /* SKMRAIDModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE019815D9100A968BF /* SKMRAIDModalViewController.m */; };
+		3BBDF2E01DDA5908006EDFA3 /* SKMRAIDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE219815D9100A968BF /* SKMRAIDParser.m */; };
+		3BBDF2E11DDA5908006EDFA3 /* SKMRAIDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE519815D9100A968BF /* SKMRAIDUtil.m */; };
+		3BBDF2E21DDA5908006EDFA3 /* SKMRAIDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE719815D9100A968BF /* SKMRAIDView.m */; };
+		3BBDF2E51DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
+		3BBDF2E61DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +63,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 27296B8E17F280CE004C268F;
 			remoteInfo = MRAID;
+		};
+		3BBDF2D91DDA583B006EDFA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27296B8717F280CE004C268F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E245B1BA17F3584B0056CCB5;
+			remoteInfo = mraidjshex;
 		};
 		E245B1BF17F35AE10056CCB5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -98,14 +115,17 @@
 		2738BDE519815D9100A968BF /* SKMRAIDUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMRAIDUtil.m; sourceTree = "<group>"; };
 		2738BDE619815D9100A968BF /* SKMRAIDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKMRAIDView.h; sourceTree = "<group>"; };
 		2738BDE719815D9100A968BF /* SKMRAIDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKMRAIDView.m; sourceTree = "<group>"; };
-		27B9578C18343A400076286F /* libSourceKitCommon.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSourceKitCommon.a; path = "../../../../../../../Library/Developer/Xcode/DerivedData/SourceKit_MRAID_Demo-chkqdkneesfnscddcsglkymwqnat/Build/Products/Debug-iphoneos/libSourceKitCommon.a"; sourceTree = "<group>"; };
 		27BBC1621833E99900074066 /* MRAID Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MRAID Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27BBC1691833E99900074066 /* MRAID Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRAID Tests-Info.plist"; sourceTree = "<group>"; };
 		27BBC16D1833E99900074066 /* MRAID_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MRAID_Tests.m; sourceTree = "<group>"; };
 		27BBC16F1833E99900074066 /* MRAID Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRAID Tests-Prefix.pch"; sourceTree = "<group>"; };
 		27BBC17A1833EA0500074066 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		27BE492319818A2F004EE6D5 /* SKLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKLogger.h; sourceTree = "<group>"; };
 		27EBFE7417F2837900FCB7DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3BBDF2D11DDA5822006EDFA3 /* SourceKitMRAID.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SourceKitMRAID.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceKitMRAID.h; sourceTree = "<group>"; };
+		3BBDF2D41DDA5822006EDFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BBDF2E31DDA5A1B006EDFA3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKitCommon.framework; path = Carthage/Build/iOS/SourceKitCommon.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +135,7 @@
 			files = (
 				27EBFE7517F2837900FCB7DD /* UIKit.framework in Frameworks */,
 				27296B9317F280CE004C268F /* Foundation.framework in Frameworks */,
+				3BBDF2E51DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,10 +143,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B9578D18343A400076286F /* libSourceKitCommon.a in Frameworks */,
 				27BBC17B1833EA0500074066 /* XCTest.framework in Frameworks */,
 				27BBC1661833E99900074066 /* UIKit.framework in Frameworks */,
 				27BBC1651833E99900074066 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BBDF2CD1DDA5822006EDFA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBDF2E61DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +163,6 @@
 		27218E6D194BBDB5002CB908 /* MRAID */ = {
 			isa = PBXGroup;
 			children = (
-				27BE492319818A2F004EE6D5 /* SKLogger.h */,
 				2738BDD319815D9100A968BF /* CloseButton.h */,
 				2738BDD419815D9100A968BF /* mraid.js */,
 				2738BDD519815D9100A968BF /* mraidjs.h */,
@@ -160,8 +187,10 @@
 		27296B8617F280CE004C268F = {
 			isa = PBXGroup;
 			children = (
+				3BBDF2E31DDA5A1B006EDFA3 /* Cartfile */,
 				27218E6D194BBDB5002CB908 /* MRAID */,
 				27BBC1671833E99900074066 /* MRAID Tests */,
+				3BBDF2D21DDA5822006EDFA3 /* SourceKitMRAID */,
 				27296B9117F280CE004C268F /* Frameworks */,
 				27296B9017F280CE004C268F /* Products */,
 			);
@@ -172,6 +201,7 @@
 			children = (
 				27296B8F17F280CE004C268F /* libMRAID.a */,
 				27BBC1621833E99900074066 /* MRAID Tests.xctest */,
+				3BBDF2D11DDA5822006EDFA3 /* SourceKitMRAID.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -179,7 +209,7 @@
 		27296B9117F280CE004C268F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				27B9578C18343A400076286F /* libSourceKitCommon.a */,
+				3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */,
 				27BBC17A1833EA0500074066 /* XCTest.framework */,
 				27EBFE7417F2837900FCB7DD /* UIKit.framework */,
 				27296B9217F280CE004C268F /* Foundation.framework */,
@@ -216,7 +246,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		3BBDF2D21DDA5822006EDFA3 /* SourceKitMRAID */ = {
+			isa = PBXGroup;
+			children = (
+				3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */,
+				3BBDF2D41DDA5822006EDFA3 /* Info.plist */,
+			);
+			name = SourceKitMRAID;
+			path = "SourceKit-MRAID";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3BBDF2CE1DDA5822006EDFA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		27296B8E17F280CE004C268F /* MRAID */ = {
@@ -254,6 +305,25 @@
 			productReference = 27BBC1621833E99900074066 /* MRAID Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		3BBDF2D01DDA5822006EDFA3 /* SourceKitMRAID */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BBDF2D61DDA5822006EDFA3 /* Build configuration list for PBXNativeTarget "SourceKitMRAID" */;
+			buildPhases = (
+				3BBDF2CC1DDA5822006EDFA3 /* Sources */,
+				3BBDF2CD1DDA5822006EDFA3 /* Frameworks */,
+				3BBDF2CE1DDA5822006EDFA3 /* Headers */,
+				3BBDF2CF1DDA5822006EDFA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3BBDF2DA1DDA583B006EDFA3 /* PBXTargetDependency */,
+			);
+			name = SourceKitMRAID;
+			productName = "SourceKit-MRAID";
+			productReference = 3BBDF2D11DDA5822006EDFA3 /* SourceKitMRAID.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,6 +335,10 @@
 				TargetAttributes = {
 					27BBC1611833E99900074066 = {
 						TestTargetID = 27296B8E17F280CE004C268F;
+					};
+					3BBDF2D01DDA5822006EDFA3 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -283,9 +357,20 @@
 				27296B8E17F280CE004C268F /* MRAID */,
 				E245B1BA17F3584B0056CCB5 /* mraidjshex */,
 				27BBC1611833E99900074066 /* MRAID Tests */,
+				3BBDF2D01DDA5822006EDFA3 /* SourceKitMRAID */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3BBDF2CF1DDA5822006EDFA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		E245B1BE17F35A830056CCB5 /* ShellScript */ = {
@@ -336,6 +421,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3BBDF2CC1DDA5822006EDFA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */,
+				3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */,
+				3BBDF2DD1DDA5908006EDFA3 /* SKMRAIDResizeProperties.m in Sources */,
+				3BBDF2DE1DDA5908006EDFA3 /* SKMRAIDInterstitial.m in Sources */,
+				3BBDF2DF1DDA5908006EDFA3 /* SKMRAIDModalViewController.m in Sources */,
+				3BBDF2E01DDA5908006EDFA3 /* SKMRAIDParser.m in Sources */,
+				3BBDF2E11DDA5908006EDFA3 /* SKMRAIDUtil.m in Sources */,
+				3BBDF2E21DDA5908006EDFA3 /* SKMRAIDView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -343,6 +443,11 @@
 			isa = PBXTargetDependency;
 			target = 27296B8E17F280CE004C268F /* MRAID */;
 			targetProxy = 27BBC1701833E99900074066 /* PBXContainerItemProxy */;
+		};
+		3BBDF2DA1DDA583B006EDFA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E245B1BA17F3584B0056CCB5 /* mraidjshex */;
+			targetProxy = 3BBDF2D91DDA583B006EDFA3 /* PBXContainerItemProxy */;
 		};
 		E245B1C017F35AE10056CCB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -441,6 +546,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/MRAIDDemo.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MRAID;
 				PUBLIC_HEADERS_FOLDER_PATH = Headers;
@@ -452,6 +561,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DSTROOT = /tmp/MRAIDDemo.dst;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MRAID;
 				PUBLIC_HEADERS_FOLDER_PATH = Headers;
@@ -499,6 +612,73 @@
 			};
 			name = Release;
 		};
+		3BBDF2D71DDA5822006EDFA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SourceKit-MRAID/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiddenjester.SourceKit-MRAID";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3BBDF2D81DDA5822006EDFA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SourceKit-MRAID/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiddenjester.SourceKit-MRAID";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		E245B1BC17F3584B0056CCB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +722,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3BBDF2D61DDA5822006EDFA3 /* Build configuration list for PBXNativeTarget "SourceKitMRAID" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3BBDF2D71DDA5822006EDFA3 /* Debug */,
+				3BBDF2D81DDA5822006EDFA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		E245B1BB17F3584B0056CCB5 /* Build configuration list for PBXAggregateTarget "mraidjshex" */ = {
 			isa = XCConfigurationList;
