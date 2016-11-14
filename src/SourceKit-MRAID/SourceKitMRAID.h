@@ -14,5 +14,8 @@ FOUNDATION_EXPORT double SourceKit_MRAIDVersionNumber;
 FOUNDATION_EXPORT const unsigned char SourceKit_MRAIDVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <SourceKit_MRAID/PublicHeader.h>
+#import "SKMRAIDView.h"
+#import "SKMRAIDInterstitial.h"
+#import "SKMRAIDServiceDelegate.h"
 
 

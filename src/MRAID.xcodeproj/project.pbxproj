@@ -43,6 +43,9 @@
 		27BBC16E1833E99900074066 /* MRAID_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BBC16D1833E99900074066 /* MRAID_Tests.m */; };
 		27BBC17B1833EA0500074066 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BBC17A1833EA0500074066 /* XCTest.framework */; };
 		27EBFE7517F2837900FCB7DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27EBFE7417F2837900FCB7DD /* UIKit.framework */; };
+		3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDDD19815D9100A968BF /* SKMRAIDInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE619815D9100A968BF /* SKMRAIDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE319815D9100A968BF /* SKMRAIDServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDD719815D9100A968BF /* MRAIDSettings.m */; };
 		3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDA19815D9100A968BF /* SKMRAIDOrientationProperties.m */; };
@@ -263,6 +266,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */,
+				3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */,
+				3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */,
 				3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -730,6 +736,7 @@
 				3BBDF2D81DDA5822006EDFA3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E245B1BB17F3584B0056CCB5 /* Build configuration list for PBXAggregateTarget "mraidjshex" */ = {
 			isa = XCConfigurationList;
