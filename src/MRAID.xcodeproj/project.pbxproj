@@ -46,6 +46,7 @@
 		3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDDD19815D9100A968BF /* SKMRAIDInterstitial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE619815D9100A968BF /* SKMRAIDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE319815D9100A968BF /* SKMRAIDServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1E12CA1DDA76FE00A57DC6 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
 		3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDD719815D9100A968BF /* MRAIDSettings.m */; };
 		3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDA19815D9100A968BF /* SKMRAIDOrientationProperties.m */; };
@@ -55,7 +56,6 @@
 		3BBDF2E01DDA5908006EDFA3 /* SKMRAIDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE219815D9100A968BF /* SKMRAIDParser.m */; };
 		3BBDF2E11DDA5908006EDFA3 /* SKMRAIDUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE519815D9100A968BF /* SKMRAIDUtil.m */; };
 		3BBDF2E21DDA5908006EDFA3 /* SKMRAIDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDE719815D9100A968BF /* SKMRAIDView.m */; };
-		3BBDF2E51DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,7 +127,7 @@
 		3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceKitMRAID.h; sourceTree = "<group>"; };
 		3BBDF2D41DDA5822006EDFA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BBDF2E31DDA5A1B006EDFA3 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
-		3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKitCommon.framework; path = Carthage/Build/iOS/SourceKitCommon.framework; sourceTree = "<group>"; };
+		3BBDF2E41DDA5A60006EDFA3 /* SourceKitCommon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SourceKitCommon.framework; path = Carthage/Build/iOS/SourceKitCommon.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,6 @@
 			files = (
 				27EBFE7517F2837900FCB7DD /* UIKit.framework in Frameworks */,
 				27296B9317F280CE004C268F /* Foundation.framework in Frameworks */,
-				3BBDF2E51DDA5A60006EDFA3 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B1E12CA1DDA76FE00A57DC6 /* SourceKitCommon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
