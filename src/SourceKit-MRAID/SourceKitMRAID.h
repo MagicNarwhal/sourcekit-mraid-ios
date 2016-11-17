@@ -17,5 +17,6 @@ FOUNDATION_EXPORT const unsigned char SourceKit_MRAIDVersionString[];
 #import "SKMRAIDView.h"
 #import "SKMRAIDInterstitial.h"
 #import "SKMRAIDServiceDelegate.h"
+#import "MRAIDSettings.h"
 
 

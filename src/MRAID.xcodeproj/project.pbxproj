@@ -47,6 +47,7 @@
 		3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE619815D9100A968BF /* SKMRAIDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDE319815D9100A968BF /* SKMRAIDServiceDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B1E12E81DDA9E6400A57DC6 /* SourceKitCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B1E12E71DDA9E2200A57DC6 /* SourceKitCommon.framework */; };
+		3B6B49031DDE2FF600B7BC3A /* MRAIDSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2738BDD619815D9100A968BF /* MRAIDSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BBDF2D31DDA5822006EDFA3 /* SourceKitMRAID.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3BBDF2DB1DDA5908006EDFA3 /* MRAIDSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDD719815D9100A968BF /* MRAIDSettings.m */; };
 		3BBDF2DC1DDA5908006EDFA3 /* SKMRAIDOrientationProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 2738BDDA19815D9100A968BF /* SKMRAIDOrientationProperties.m */; };
@@ -266,6 +267,7 @@
 			files = (
 				3B1E12C71DDA6CA600A57DC6 /* SKMRAIDView.h in Headers */,
 				3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */,
+				3B6B49031DDE2FF600B7BC3A /* MRAIDSettings.h in Headers */,
 				3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */,
 				3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */,
 			);
