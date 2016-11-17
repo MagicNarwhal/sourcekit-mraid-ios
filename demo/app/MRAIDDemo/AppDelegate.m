@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "SKLogger.h"
+
+@import SourceKitCommon.SKLogger;
 
 @implementation AppDelegate
 

@@ -7,7 +7,8 @@
 //
 
 #import "AboutViewController.h"
-#import "MRAIDSettings.h"
+
+@import SourceKitMRAID;
 
 @implementation AboutViewController
 

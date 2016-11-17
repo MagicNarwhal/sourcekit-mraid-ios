@@ -8,9 +8,9 @@
 
 #import "InterstitialViewController.h"
 
-#import "SKMRAIDServiceDelegate.h"
-#import "SKMRAIDInterstitial.h"
 #import <AudioToolbox/AudioToolbox.h>
+
+@import SourceKitMRAID;
 
 @interface InterstitialViewController () <SKMRAIDInterstitialDelegate, SKMRAIDServiceDelegate>
 {

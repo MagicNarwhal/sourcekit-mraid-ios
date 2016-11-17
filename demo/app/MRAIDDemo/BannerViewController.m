@@ -7,9 +7,9 @@
 //
 
 #import "BannerViewController.h"
-#import "SKMRAIDView.h"
-#import "SKMRAIDServiceDelegate.h"
-#import "SKBrowser.h"
+
+@import SourceKitMRAID;
+@import SourceKitCommon.SKBrowser;
 
 @interface BannerViewController () <SKMRAIDViewDelegate, SKMRAIDServiceDelegate>
 
