@@ -229,6 +229,8 @@ typedef enum {
 {
     [SKLogger debug:@"MRAID - View" withMessage:@"cancel"];
     [currentWebView stopLoading];
+    [self close];
+    currentWebView.delegate = nil;
     currentWebView = nil;
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 }
@@ -241,7 +243,9 @@ typedef enum {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
     
-    
+    webView.delegate = nil;
+    webViewPart2.delegate  = nil;
+    currentWebView.delegate = nil;
     webView = nil;
     webViewPart2 = nil;
     currentWebView = nil;
@@ -490,6 +494,7 @@ typedef enum {
         // 2-part expansion
         webViewPart2 = [[UIWebView alloc] initWithFrame:frame];
         [self initWebView:webViewPart2];
+        currentWebView.delegate = nil;
         currentWebView = webViewPart2;
         bonafideTapObserved = YES; // by definition for 2 part expand a valid tap has occurred
         
