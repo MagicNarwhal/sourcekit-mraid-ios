@@ -401,6 +401,7 @@ typedef enum {
         // Clean up webViewPart2 if returning from 2-part expansion.
         webViewPart2.delegate = nil;
         currentWebView = webView;
+        currentWebView.delegate = self;
         webViewPart2 = nil;
     } else {
         // Reset frame of webView if returning from 1-part expansion.
