@@ -2,6 +2,7 @@ Nexage Integration SourceKit for MRAID
 ======================================
 
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![CocoaPods](https://img.shields.io/cocoapods/v/sourcekit-mraid-ios.svg)](https://github.com/MagicNarwhal/sourcekit-mraid-ios)
 
 Nexage Integration SourceKit for MRAID is an easy to use library which implements the IAB MRAID 2.0 spec (http://www.iab.net/guidelines/508676/mobile_guidance/mraid). It is 
 written in Objective-C and works in both iPhone and iPad applications.
