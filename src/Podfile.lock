@@ -1,0 +1,12 @@
+PODS:
+  - SourceKitCommon (1.0.5)
+
+DEPENDENCIES:
+  - SourceKitCommon
+
+SPEC CHECKSUMS:
+  SourceKitCommon: d08a28398960e710510eac71cdd47ecc1337cbf0
+
+PODFILE CHECKSUM: ad2e831568ee95b9eea92069c64211ffdeebe053
+
+COCOAPODS: 1.2.0

@@ -15,9 +15,9 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "sourcekit-mraid-ios"
+  s.name         = "SourceKitMRAID"
   s.version      = "1.0.9"
-  s.summary      = "Nexage Integration SourceKit for MRAID"
+  s.summary      = "MRAID ad view"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -90,6 +90,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "src", "src/**/*.{h,m}"
+  s.exclude_files = "src/MRAID Tests/"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -120,6 +121,7 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
+  s.dependency "SourceKitCommon"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -132,7 +134,4 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
-  s.subspec 'Common' do |ss|
-    ss.dependency "sourcekit-common-ios"
-  end
 end
