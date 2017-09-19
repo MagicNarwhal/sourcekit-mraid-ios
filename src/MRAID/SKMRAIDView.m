@@ -1010,7 +1010,7 @@ typedef enum {
         [SKLogger info:@"MRAID - View" withMessage:[NSString stringWithFormat:@"Found URL %@ with type %@", absUrlString, @(navigationType)]];
         
         // Links, Form submissions
-        if (navigationType == UIWebViewNavigationTypeLinkClicked) {
+        if (navigationType == UIWebViewNavigationTypeLinkClicked && bonafideTapObserved) {
             // For banner views
             if ([self.delegate respondsToSelector:@selector(mraidViewNavigate:withURL:)]) {
                 [SKLogger debug:@"MRAID - View" withMessage:[NSString stringWithFormat:@"JS webview load: %@",
