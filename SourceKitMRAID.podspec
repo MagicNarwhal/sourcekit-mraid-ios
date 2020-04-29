@@ -121,7 +121,8 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
-  s.dependency "SourceKitCommon"
+  # s.dependency "SourceKitCommon"
+  s.static_framework = true
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

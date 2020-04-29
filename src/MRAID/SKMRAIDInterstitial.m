@@ -7,9 +7,7 @@
 //
 
 #import "SKMRAIDInterstitial.h"
-
-@import SourceKitCommon.SKLogger;
-
+#import "SKLogger.h"
 #import "SKMRAIDView.h"
 #import "SKMRAIDServiceDelegate.h"
 

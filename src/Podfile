@@ -19,5 +19,5 @@ target 'SourceKitMRAID' do
   use_frameworks!
 
   # Pods for SourceKitMRAID
-  pod 'SourceKitCommon'
+  #pod 'SourceKitCommon'
 end

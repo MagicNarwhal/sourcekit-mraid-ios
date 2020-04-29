@@ -59,6 +59,9 @@
 		C4334B269494D8D2E3C21C02 /* libPods-MRAID Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 20560CEAC8FC464FE8661E96 /* libPods-MRAID Tests.a */; };
 		ECD7EE62998846F1E400D038 /* libPods-MRAID.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9937F2C9BDE756E0202955C2 /* libPods-MRAID.a */; };
 		F1243CFFF69CC291CE1CAAE2 /* Pods_SourceKitMRAID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7827BBEA56FD2DD2CA2337A9 /* Pods_SourceKitMRAID.framework */; };
+		F260879924597F20006F4CD5 /* SKLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F260879824597F20006F4CD5 /* SKLogger.m */; };
+		F260879A24598239006F4CD5 /* SKLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = F260879724597F20006F4CD5 /* SKLogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F260879B245982C6006F4CD5 /* SKLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F260879824597F20006F4CD5 /* SKLogger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +142,8 @@
 		9937F2C9BDE756E0202955C2 /* libPods-MRAID.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MRAID.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA872A3199DF3332E031016E /* Pods-SourceKitMRAID.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SourceKitMRAID.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SourceKitMRAID/Pods-SourceKitMRAID.debug.xcconfig"; sourceTree = "<group>"; };
 		ED0E25E5F69F5E86A3C7792A /* Pods-MRAID Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MRAID Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MRAID Tests/Pods-MRAID Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F260879724597F20006F4CD5 /* SKLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SKLogger.h; path = "../../../iOS-Classic/TalkMeUI/Pods/SourceKitCommon/src/Logger/SKLogger.h"; sourceTree = "<group>"; };
+		F260879824597F20006F4CD5 /* SKLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKLogger.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +212,8 @@
 				2738BDE519815D9100A968BF /* SKMRAIDUtil.m */,
 				2738BDE619815D9100A968BF /* SKMRAIDView.h */,
 				2738BDE719815D9100A968BF /* SKMRAIDView.m */,
+				F260879724597F20006F4CD5 /* SKLogger.h */,
+				F260879824597F20006F4CD5 /* SKLogger.m */,
 			);
 			path = MRAID;
 			sourceTree = "<group>";
@@ -297,6 +304,7 @@
 				3B1E12C81DDA6CB000A57DC6 /* SKMRAIDServiceDelegate.h in Headers */,
 				3B6B49031DDE2FF600B7BC3A /* MRAIDSettings.h in Headers */,
 				3B1E12C61DDA6C9500A57DC6 /* SKMRAIDInterstitial.h in Headers */,
+				F260879A24598239006F4CD5 /* SKLogger.h in Headers */,
 				3BBDF2D51DDA5822006EDFA3 /* SourceKitMRAID.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +320,6 @@
 				27296B8B17F280CE004C268F /* Sources */,
 				27296B8C17F280CE004C268F /* Frameworks */,
 				27296B8D17F280CE004C268F /* CopyFiles */,
-				950FE100A87E30796403FFA1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -331,8 +338,6 @@
 				CD0EE705FB5390ABCA49F133 /* [CP] Check Pods Manifest.lock */,
 				27BBC15E1833E99900074066 /* Sources */,
 				27BBC15F1833E99900074066 /* Frameworks */,
-				68C97CEDA4F791CD2BAB82C1 /* [CP] Embed Pods Frameworks */,
-				DD3254000F20CA42883A2698 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -353,7 +358,6 @@
 				3BBDF2CD1DDA5822006EDFA3 /* Frameworks */,
 				3BBDF2CE1DDA5822006EDFA3 /* Headers */,
 				3BBDF2CF1DDA5822006EDFA3 /* Resources */,
-				A60E70D1D9BE4D10C3214AB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,7 +375,7 @@
 		27296B8717F280CE004C268F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = Nexage;
 				TargetAttributes = {
 					27BBC1611833E99900074066 = {
@@ -385,10 +389,11 @@
 			};
 			buildConfigurationList = 27296B8A17F280CE004C268F /* Build configuration list for PBXProject "MRAID" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 27296B8617F280CE004C268F;
 			productRefGroup = 27296B9017F280CE004C268F /* Products */;
@@ -432,21 +437,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		68C97CEDA4F791CD2BAB82C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRAID Tests/Pods-MRAID Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		849E7DCEE887C949EA7A1242 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -465,36 +455,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		950FE100A87E30796403FFA1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRAID/Pods-MRAID-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A60E70D1D9BE4D10C3214AB0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SourceKitMRAID/Pods-SourceKitMRAID-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		CD0EE705FB5390ABCA49F133 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -511,21 +471,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DD3254000F20CA42883A2698 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MRAID Tests/Pods-MRAID Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E245B1BE17F35A830056CCB5 /* ShellScript */ = {
@@ -551,6 +496,7 @@
 			files = (
 				2738BDF319815D9100A968BF /* SKMRAIDModalViewController.m in Sources */,
 				2738BDF719815D9100A968BF /* SKMRAIDUtil.m in Sources */,
+				F260879924597F20006F4CD5 /* SKLogger.m in Sources */,
 				2738BDED19815D9100A968BF /* SKMRAIDOrientationProperties.m in Sources */,
 				2738BDF519815D9100A968BF /* SKMRAIDParser.m in Sources */,
 				2738BDEB19815D9100A968BF /* MRAIDSettings.m in Sources */,
@@ -569,6 +515,7 @@
 				2738BDF619815D9100A968BF /* SKMRAIDParser.m in Sources */,
 				2738BDF819815D9100A968BF /* SKMRAIDUtil.m in Sources */,
 				2738BDF419815D9100A968BF /* SKMRAIDModalViewController.m in Sources */,
+				F260879B245982C6006F4CD5 /* SKLogger.m in Sources */,
 				2738BDEE19815D9100A968BF /* SKMRAIDOrientationProperties.m in Sources */,
 				2738BDEC19815D9100A968BF /* MRAIDSettings.m in Sources */,
 				2738BDFA19815D9100A968BF /* SKMRAIDView.m in Sources */,
@@ -620,14 +567,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -666,14 +621,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

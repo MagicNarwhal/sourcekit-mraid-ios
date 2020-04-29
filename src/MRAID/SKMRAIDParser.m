@@ -7,8 +7,7 @@
 //
 
 #import "SKMRAIDParser.h"
-
-@import SourceKitCommon.SKLogger;
+#import "SKLogger.h"
 
 @interface SKMRAIDParser ()
 

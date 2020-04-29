@@ -7,9 +7,7 @@
 //
 
 #import "SKMRAIDModalViewController.h"
-
-@import SourceKitCommon.SKLogger;
-
+#import "SKLogger.h"
 #import "SKMRAIDUtil.h"
 #import "SKMRAIDOrientationProperties.h"
 
@@ -201,26 +199,11 @@
         
     } completion:^(id<UIViewControllerTransitionCoordinatorContext> context) {
         // didRotateFromInterfaceOrientation goes here
-        if (hasViewAppeared) {
+        if (self->hasViewAppeared) {
             [self.delegate mraidModalViewControllerDidRotate:self];
-            hasRotated = NO;
+            self->hasRotated = NO;
         }
     }];
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    UIInterfaceOrientation toInterfaceOrientation = self.interfaceOrientation;
-    [SKLogger debug:@"MRAID - ModalViewController" withMessage:[NSString stringWithFormat:@"%@ %@from %@ to %@",
-                      [self.class description],
-                      NSStringFromSelector(_cmd),
-                      [self stringfromUIInterfaceOrientation:fromInterfaceOrientation],
-                      [self stringfromUIInterfaceOrientation:toInterfaceOrientation]]];
-    
-    if (hasViewAppeared) {
-        [self.delegate mraidModalViewControllerDidRotate:self];
-        hasRotated = NO;
-    }
 }
 
 - (void)forceToOrientation:(SKMRAIDOrientationProperties *)orientationProps;
