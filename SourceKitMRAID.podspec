@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "SourceKitMRAID"
-  s.version      = "1.0.10"
+  s.version      = "1.0.11"
   s.summary      = "MRAID ad view"
 
   # This description is used to generate tags and improve search results.
